@@ -7,14 +7,8 @@ module.exports = {
     },
     extend: {
       colors: {},
-      textColor: {
-        primary: color("--color-text-primary")
-      },
-      backgroundColor: {
-        primary: color("--color-bg-primary")
-      },
     },
   },
   variants: {},
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [require("@tailwindcss/typography"),("daisyui")],
 };
