@@ -16,5 +16,11 @@ h3 {
 
 body :not(pre) > code[class*="language-"],
 body pre[class*="language-"] {
+  .highlight-line:before {
   counter-reset: lineNumber;
+  content: counter(lineNumber);
+  counter-increment: lineNumber;
+  },
 }
+
+
