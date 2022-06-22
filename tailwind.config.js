@@ -7,6 +7,12 @@ module.exports = {
     },
     extend: {
       colors: {},
+      textColor: {
+        primary: color("--color-text-primary")
+      },
+      backgroundColor: {
+        primary: color("--color-bg-primary")
+      }
     },
   },
   variants: {},
