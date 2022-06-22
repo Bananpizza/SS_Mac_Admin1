@@ -12,6 +12,8 @@ module.exports = {
   variants: {},
   plugins: [require("@tailwindcss/typography"),("daisyui")],
   daisyui: {
+    styled: true,
+    utils: true,
     themes: ["dracula"],
   }
 };
