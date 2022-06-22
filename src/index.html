@@ -20,4 +20,16 @@ path: home
 
   {% include "./_includes/partials/content.html" %}
 
+  {% for post in postslist | reverse %}
+  <article class="my-8">
+      <h2 class="font-bold text-3xl text-gray-900 mb-2">
+          <a href="{{ post.url | url }}">
+              {% if post.data.title %}
+                  {{ post.data.title }}
+              {% else %}
+                  Untitled
+              {% endif %}
+          </a>
+      </h2>
+  </article>
 </div>
