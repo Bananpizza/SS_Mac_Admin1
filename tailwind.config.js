@@ -12,7 +12,7 @@ module.exports = {
       },
       backgroundColor: {
         primary: color("--color-bg-primary")
-      }
+      },
     },
   },
   variants: {},
