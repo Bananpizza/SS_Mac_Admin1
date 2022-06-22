@@ -13,8 +13,10 @@ h3 {
 }
 
 /* Syntax Highlighting*/
-
+pre {
+  counter-reset: lineNumber;
+}
 body :not(pre) > code[class*="language-"],
 body pre[class*="language-"] {
-  @apply bg-gray-800;
 }
+
