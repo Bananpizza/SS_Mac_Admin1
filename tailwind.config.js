@@ -14,6 +14,6 @@ module.exports = {
   daisyui: {
     styled: true,
     utils: true,
-    themes: ["cyberpunk", "dracula"],
+    themes: ["retro", "dracula"],
   }
 };
