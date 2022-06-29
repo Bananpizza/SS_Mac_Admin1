@@ -3,7 +3,7 @@ items:
   - text: Blog
     url: "/blog"
   - text: About
-    url: "#"
+    url: "/about"
   - text: Contact
     url: "#"
   - text: Database
