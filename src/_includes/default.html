@@ -13,6 +13,7 @@
     {% block head %}{% endblock %}
     <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
     <link rel="stylesheet" href="/static/css/termynal.css">
+    <link rel="stylesheet" href="/static/css/termynal_gray.css">
     {% if prism == true %}
       <link rel="stylesheet" type="text/css" href="/static/css/prism-tomorrow.css">
     {% endif %}
@@ -31,8 +32,7 @@
       <!-- Needed only if you are using Netlify Identity feature -->
       <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     {% endif %}
-
+    <script src="termynal.js" data-termynal-container="#termynal"></script>
   </body>
 </html>
 
-<script src="termynal.js" data-termynal-container="#termynal"></script>
