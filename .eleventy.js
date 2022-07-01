@@ -32,6 +32,10 @@ module.exports = function (eleventyConfig) {
     "./node_modules/alpinejs/dist/cdn.min.js": "./static/js/alpine.js",
     "./node_modules/prismjs/themes/prism-tomorrow.css":
       "./static/css/prism-tomorrow.css",
+    "./node_modules/termynal/dist/cjs/termynal.js":
+      "./static/js/termynal.js",
+    "./node_modules/termynal/dist/style.css":
+      "./static/css/termynal.css",
   });
 
   // Copy Image Folder to /_site
