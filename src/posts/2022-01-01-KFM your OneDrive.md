@@ -80,80 +80,80 @@ So we need to add the following:
 <b>Allow OneDrive disk access</b>
 
 ```xml
-	 <dict>
-			<key>PayloadDisplayName</key>
-			<string>Privacy Preferences Policy Control #1</string>
-			<key>PayloadIdentifier</key>
-			<string>com.apple.TCC.configuration-profile-policy</string>
-			<key>PayloadType</key>
-			<string>com.apple.TCC.configuration-profile-policy</string>
-			<key>PayloadUUID</key>
-			<string>{UUID-GOES-HERE}</string>
-			<key>PayloadVersion</key>
-			<integer>1</integer>
-			<key>Services</key>
-			<dict>
-				<key>SystemPolicyAllFiles</key>
-				<array>
-					<dict>
-						<key>Allowed</key>
-						<true/>
-						<key>CodeRequirement</key>
-						<string>identifier "com.microsoft.OneDrive" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9</string>
-						<key>Identifier</key>
-						<string>com.microsoft.OneDrive</string>
-						<key>IdentifierType</key>
-						<string>bundleID</string>
-						<key>StaticCode</key>
-						<false/>
-					</dict>
-				</array>
-				<key>SystemPolicyDesktopFolder</key>
-				<array>
-					<dict>
-						<key>Allowed</key>
-						<true/>
-						<key>CodeRequirement</key>
-						<string>identifier "com.microsoft.OneDrive" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9</string>
-						<key>Identifier</key>
-						<string>com.microsoft.OneDrive</string>
-						<key>IdentifierType</key>
-						<string>bundleID</string>
-						<key>StaticCode</key>
-						<false/>
-					</dict>
-				</array>
-				<key>SystemPolicyDocumentsFolder</key>
-				<array>
-					<dict>
-						<key>Allowed</key>
-						<true/>
-						<key>CodeRequirement</key>
-						<string>identifier "com.microsoft.OneDrive" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9</string>
-						<key>Identifier</key>
-						<string>com.microsoft.OneDrive</string>
-						<key>IdentifierType</key>
-						<string>bundleID</string>
-						<key>StaticCode</key>
-						<false/>
-					</dict>
-				</array>
-				<key>SystemPolicyDownloadsFolder</key>
-				<array>
-					<dict>
-						<key>Allowed</key>
-						<true/>
-						<key>CodeRequirement</key>
-						<string>identifier "com.microsoft.OneDrive" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9</string>
-						<key>Identifier</key>
-						<string>com.microsoft.OneDrive</string>
-						<key>IdentifierType</key>
-						<string>bundleID</string>
-						<key>StaticCode</key>
-						<false/>
-					</dict>
-				</array>
-			</dict>
+<dict>
+	<key>PayloadDisplayName</key>
+		<string>Privacy Preferences Policy Control #1</string>
+		<key>PayloadIdentifier</key>
+		<string>com.apple.TCC.configuration-profile-policy</string>
+		<key>PayloadType</key>
+		<string>com.apple.TCC.configuration-profile-policy</string>
+		<key>PayloadUUID</key>
+		<string>{UUID-GOES-HERE}</string>
+		<key>PayloadVersion</key>
+		<integer>1</integer>
+		<key>Services</key>
+		<dict>
+			<key>SystemPolicyAllFiles</key>
+			<array>
+				<dict>
+					<key>Allowed</key>
+					<true/>
+					<key>CodeRequirement</key>
+					<string>identifier "com.microsoft.OneDrive" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9</string>
+					<key>Identifier</key>
+					<string>com.microsoft.OneDrive</string>
+					<key>IdentifierType</key>
+					<string>bundleID</string>
+					<key>StaticCode</key>
+					<false/>
+				</dict>
+			</array>
+			<key>SystemPolicyDesktopFolder</key>
+			<array>
+				<dict>
+					<key>Allowed</key>
+					<true/>
+					<key>CodeRequirement</key>
+					<string>identifier "com.microsoft.OneDrive" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9</string>
+					<key>Identifier</key>
+					<string>com.microsoft.OneDrive</string>
+					<key>IdentifierType</key>
+					<string>bundleID</string>
+					<key>StaticCode</key>
+					<false/>
+				</dict>
+			</array>
+			<key>SystemPolicyDocumentsFolder</key>
+			<array>
+				<dict>
+					<key>Allowed</key>
+					<true/>
+					<key>CodeRequirement</key>
+					<string>identifier "com.microsoft.OneDrive" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9</string>
+					<key>Identifier</key>
+					<string>com.microsoft.OneDrive</string>
+					<key>IdentifierType</key>
+					<string>bundleID</string>
+					<key>StaticCode</key>
+					<false/>
+				</dict>
+			</array>
+			<key>SystemPolicyDownloadsFolder</key>
+			<array>
+				<dict>
+					<key>Allowed</key>
+					<true/>
+					<key>CodeRequirement</key>
+					<string>identifier "com.microsoft.OneDrive" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9</string>
+					<key>Identifier</key>
+					<string>com.microsoft.OneDrive</string>
+					<key>IdentifierType</key>
+					<string>bundleID</string>
+					<key>StaticCode</key>
+					<false/>
+				</dict>
+			</array>
+		</dict>
 ```
 
 
