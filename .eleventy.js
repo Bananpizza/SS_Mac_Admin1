@@ -34,7 +34,7 @@ module.exports = function (eleventyConfig) {
       "./static/css/prism-tomorrow.css",
     "termynal.js":
       "./static/js/termynal.js",
-    "./src/static/css/termynal_gray.css":
+    "./src/static/css/termynal.css":
       "./static/css/termynal.css",
   });
 
