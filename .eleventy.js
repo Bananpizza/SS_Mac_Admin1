@@ -18,9 +18,7 @@ module.exports = function (eleventyConfig) {
   });
 
   // Syntax Highlighting for Code blocks
-  eleventyConfig.addPlugin(syntaxHighlight, {
-    alwaysWrapLineHighlights: true,
-  });
+  eleventyConfig.addPlugin(syntaxHighlight);
 
   // To Support .yaml Extension in _data
   // You may remove this if you can use JSON
