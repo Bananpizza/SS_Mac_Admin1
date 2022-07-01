@@ -41,7 +41,7 @@ This leaves us with a OneDrive config initially with these settings:<br/><br/>
 
 <b>OneDrive configuration part of mobileconfig</b>
 
-```diff-xml
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
