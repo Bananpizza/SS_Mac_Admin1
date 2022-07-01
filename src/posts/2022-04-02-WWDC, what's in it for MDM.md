@@ -7,7 +7,4 @@ tags:
   - macOS
 ---
 
-
----
-
 Things about WWDC that targets MDM area of things.
