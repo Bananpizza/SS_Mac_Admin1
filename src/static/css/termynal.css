@@ -15,8 +15,8 @@
 [data-termynal] {
     width: 750px;
     max-width: 100%;
-    background: #ddd;
-    color: #1a1e24;
+    background: var(--color-bg);
+    color: var(--color-text);
     font-size: 18px;
     font-family: 'Fira Mono', Consolas, Menlo, Monaco, 'Courier New', Courier, monospace;
     border-radius: 4px;
