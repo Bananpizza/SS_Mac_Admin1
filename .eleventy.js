@@ -3,6 +3,16 @@ const { DateTime } = require("luxon");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const htmlmin = require("html-minifier");
 
+module.exports = function(data) {
+  let code = `
++function myFunction() {
+  // …
+-  return true;
+}`;
+
+  return this.highlight("diff-js", code);
+}
+
 module.exports = function (eleventyConfig) {
   // Disable automatic use of your .gitignore
   eleventyConfig.setUseGitIgnore(false);
@@ -30,8 +40,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     "./src/admin/config.yml": "./admin/config.yml",
     "./node_modules/alpinejs/dist/cdn.min.js": "./static/js/alpine.js",
-    "./node_modules/prismjs/themes/prism-tomorrow.css":
-      "./static/css/prism-tomorrow.css",
+    "./node_modules/prismjs/themes/prism-okaidia.css":
+      "./static/css/prism-okaidia.css",
     "termynal.js":
       "./static/js/termynal.js",
     "./src/static/css/termynal_gray.css":
