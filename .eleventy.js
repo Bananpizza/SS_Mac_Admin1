@@ -3,15 +3,6 @@ const { DateTime } = require("luxon");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const htmlmin = require("html-minifier");
 
-module.exports = function(data) {
-  let code = `
-+function myFunction() {
-  // …
--  return true;
-}`;
-
-  return this.highlight("diff-xml", code);
-}
 
 module.exports = function (eleventyConfig) {
   // Disable automatic use of your .gitignore
@@ -30,6 +21,17 @@ module.exports = function (eleventyConfig) {
   // Syntax Highlighting for Code blocks
   eleventyConfig.addPlugin(syntaxHighlight, {
     alwaysWrapLineHighlights: true,
+    
+    init: function(data) {
+      let code = `
+    +function myFunction() {
+      // …
+    -  return true;
+    }`;
+    
+      return this.highlight("diff-xml", code);
+    },
+
   });
 
   // To Support .yaml Extension in _data
