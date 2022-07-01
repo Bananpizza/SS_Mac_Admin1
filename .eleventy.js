@@ -31,8 +31,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     "./src/admin/config.yml": "./admin/config.yml",
     "./node_modules/alpinejs/dist/cdn.min.js": "./static/js/alpine.js",
-    "./node_modules/prismjs/themes/prism-okaidia.css":
-      "./static/css/prism-okaidia.css",
+    "./node_modules/prismjs/themes/prism-tomorrow.min.css":
+      "./static/css/prism-tomorrow.min.css",
     "termynal.js":
       "./static/js/termynal.js",
     "./src/static/css/termynal_gray.css":
