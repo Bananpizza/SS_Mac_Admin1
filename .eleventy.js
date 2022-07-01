@@ -21,17 +21,6 @@ module.exports = function (eleventyConfig) {
   // Syntax Highlighting for Code blocks
   eleventyConfig.addPlugin(syntaxHighlight, {
     alwaysWrapLineHighlights: true,
-    
-    init: function(data) {
-      let code = `
-    +function myFunction() {
-      // …
-    -  return true;
-    }`;
-    
-      return this.highlight("diff-xml", code);
-    },
-
   });
 
   // To Support .yaml Extension in _data
