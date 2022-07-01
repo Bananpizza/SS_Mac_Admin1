@@ -1,7 +1,7 @@
 ---
 title: KFM your OneDrive
 description: Known folder move for OneDrive on macOS!
-author: Surjith S M
+author: SS Mac Admin
 date: 2022-01-01
 tags:
   - macOS
@@ -20,16 +20,23 @@ So, let's get started.
 
 The important configurations we need to have in our mobileconfig is the following keys:<br/>
 <b>Automatically move known folders</b><br/>
-<code>``` <key>KFMSilentOptIn</key>
-<string>(TenantID)</string> ```</code><br/>
+```xml
+<key>KFMSilentOptIn</key>
+<string>(TenantID)</string>
+```
+<br/>
 <b>If you want to prompt the users, use the following key.</b><br/>
-<code>``` <key>KFMOptInWithWizard</key>
-<string>(TenantID)</string> ```</code>
+
+```xml
+<key>KFMOptInWithWizard</key>
+<string>(TenantID)</string>
+```
 
 This leaves us with a OneDrive config initially with these settings:<br/><br/>
 <details>
 	<summary><b>OneDrive configuration part of mobileconfig</b></summary>
-<code>``` <?xml version="1.0" encoding="UTF-8"?>
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
@@ -56,8 +63,8 @@ This leaves us with a OneDrive config initially with these settings:<br/><br/>
 			<string>{UUID-GOES-HERE}</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
-		</dict>```
-</code>
+		</dict>
+```
 </details>
 
 Although this might look sufficient, we need to allow OneDrive for Full Disk access along with Desktop and Documents folder. We can add these TCC configurations in the same config file. If you want to, you can create a separate configuration in your MDM to grant OneDrive those permissions.
@@ -66,7 +73,8 @@ So we need to add the following:
 
 <details>
 	<summary><b>Allow OneDrive disk access</b></summary>
-<code>```XML <dict>
+```xml
+	 <dict>
 			<key>PayloadDisplayName</key>
 			<string>Privacy Preferences Policy Control #1</string>
 			<key>PayloadIdentifier</key>
@@ -139,15 +147,16 @@ So we need to add the following:
 						<false/>
 					</dict>
 				</array>
-			</dict>``` 
-</code>
+			</dict>
+``` 
 </details>
 
 So all in all, our full mobileconfig will look like the following XML:
 
 <details>
 	<summary><b>Full code for KMF OneDrive!</b></summary>
-<code>```XML <?xml version="1.0" encoding="UTF-8"?>
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
@@ -270,7 +279,8 @@ So all in all, our full mobileconfig will look like the following XML:
 	<key>TargetDeviceType</key>
 	<integer>5</integer>
 </dict>
-</plist>``` </code>
+</plist>
+```
 </details>
 
 Have fun and good luck!
