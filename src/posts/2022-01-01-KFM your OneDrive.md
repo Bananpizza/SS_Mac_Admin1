@@ -56,7 +56,7 @@ This leaves us with a OneDrive config initially with these settings:<br/><br/>
 			<key>OpenAtLogin</key>
 			<true/>
 			<key>KFMSilentOptIn</key>
-+			<string>(TenantID)</string>
+			<string>(TenantID)</string>
 			<key>KFMBlockOptOut</key>
 			<true/>
 			<key>PayloadDisplayName</key>
@@ -66,7 +66,7 @@ This leaves us with a OneDrive config initially with these settings:<br/><br/>
 			<key>PayloadType</key>
 			<string>com.microsoft.OneDrive</string>
 			<key>PayloadUUID</key>
-+			<string>{UUID-GOES-HERE}</string>
+			<string>{UUID-GOES-HERE}</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
 		</dict>
