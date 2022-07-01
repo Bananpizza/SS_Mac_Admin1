@@ -1,9 +1,10 @@
 ---
 title: KFM your OneDrive
-layout: post
-background: https://cdna.artstation.com/p/assets/images/images/008/555/002/large/antoine-collignon-bigger.jpg
-subtitle: Automate the sync, finally here
-artist: artstation.com/antoinecollignon
+description: Known folder move for OneDrive on macOS!
+author: Surjith S M
+date: 2022-01-01
+tags:
+  - macOS
 ---
 
 Microsoft has finally released the option to KFM your files to OneDrive on macOS (Late Feb/early March). This has been a function that has been available for a while on Windows.
