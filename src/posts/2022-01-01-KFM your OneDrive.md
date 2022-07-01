@@ -35,6 +35,7 @@ The important configurations we need to have in our mobileconfig is the followin
 This leaves us with a OneDrive config initially with these settings:<br/><br/>
 <details>
 	<summary><b>OneDrive configuration part of mobileconfig</b></summary>
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -65,6 +66,7 @@ This leaves us with a OneDrive config initially with these settings:<br/><br/>
 			<integer>1</integer>
 		</dict>
 ```
+
 </details>
 
 Although this might look sufficient, we need to allow OneDrive for Full Disk access along with Desktop and Documents folder. We can add these TCC configurations in the same config file. If you want to, you can create a separate configuration in your MDM to grant OneDrive those permissions.
@@ -73,6 +75,7 @@ So we need to add the following:
 
 <details>
 	<summary><b>Allow OneDrive disk access</b></summary>
+
 ```xml
 	 <dict>
 			<key>PayloadDisplayName</key>
@@ -148,13 +151,15 @@ So we need to add the following:
 					</dict>
 				</array>
 			</dict>
-``` 
+```
+
 </details>
 
 So all in all, our full mobileconfig will look like the following XML:
 
 <details>
 	<summary><b>Full code for KMF OneDrive!</b></summary>
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -280,6 +285,7 @@ So all in all, our full mobileconfig will look like the following XML:
 	<integer>5</integer>
 </dict>
 </plist>
+
 ```
 </details>
 
