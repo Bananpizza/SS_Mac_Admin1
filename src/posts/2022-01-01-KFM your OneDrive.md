@@ -41,7 +41,7 @@ This leaves us with a OneDrive config initially with these settings:<br/><br/>
 
 <b>OneDrive configuration part of mobileconfig</b>
 
-```xml
+```diff-xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -56,7 +56,7 @@ This leaves us with a OneDrive config initially with these settings:<br/><br/>
 			<key>OpenAtLogin</key>
 			<true/>
 			<key>KFMSilentOptIn</key>
-			<string>(TenantID)</string>
++			<string>(TenantID)</string>
 			<key>KFMBlockOptOut</key>
 			<true/>
 			<key>PayloadDisplayName</key>
@@ -66,7 +66,7 @@ This leaves us with a OneDrive config initially with these settings:<br/><br/>
 			<key>PayloadType</key>
 			<string>com.microsoft.OneDrive</string>
 			<key>PayloadUUID</key>
-			<string>{UUID-GOES-HERE}</string>
++			<string>{UUID-GOES-HERE}</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
 		</dict>
