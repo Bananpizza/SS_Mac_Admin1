@@ -10,7 +10,7 @@ module.exports = function(data) {
 -  return true;
 }`;
 
-  return this.highlight("diff-js", code);
+  return this.highlight("diff-xml", code);
 }
 
 module.exports = function (eleventyConfig) {
