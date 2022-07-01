@@ -33,8 +33,8 @@ The important configurations we need to have in our mobileconfig is the followin
 ```
 
 This leaves us with a OneDrive config initially with these settings:<br/><br/>
-<details>
-	<summary><b>OneDrive configuration part of mobileconfig</b></summary>
+
+<b>OneDrive configuration part of mobileconfig</b>
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -67,14 +67,12 @@ This leaves us with a OneDrive config initially with these settings:<br/><br/>
 		</dict>
 ```
 
-</details>
-
 Although this might look sufficient, we need to allow OneDrive for Full Disk access along with Desktop and Documents folder. We can add these TCC configurations in the same config file. If you want to, you can create a separate configuration in your MDM to grant OneDrive those permissions.
 
 So we need to add the following:
 
-<details>
-	<summary><b>Allow OneDrive disk access</b></summary>
+
+<b>Allow OneDrive disk access</b>
 
 ```xml
 	 <dict>
@@ -153,12 +151,10 @@ So we need to add the following:
 			</dict>
 ```
 
-</details>
 
 So all in all, our full mobileconfig will look like the following XML:
 
-<details>
-	<summary><b>Full code for KMF OneDrive!</b></summary>
+<b>Full code for KMF OneDrive!</b>
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -287,7 +283,6 @@ So all in all, our full mobileconfig will look like the following XML:
 </plist>
 
 ```
-</details>
 
 Have fun and good luck!
 
