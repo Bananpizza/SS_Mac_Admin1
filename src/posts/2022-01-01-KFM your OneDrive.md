@@ -41,9 +41,7 @@ This leaves us with a OneDrive config initially with these settings:<br/><br/>
 
 <b>OneDrive configuration part of mobileconfig</b>
 
-<pre class="line-numbers"><code>
-
-```xml
+```xml#
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -73,7 +71,6 @@ This leaves us with a OneDrive config initially with these settings:<br/><br/>
 			<integer>1</integer>
 		</dict>
 ```
-</code></pre>
 
 Although this might look sufficient, we need to allow OneDrive for Full Disk access along with Desktop and Documents folder. We can add these TCC configurations in the same config file. If you want to, you can create a separate configuration in your MDM to grant OneDrive those permissions.
 

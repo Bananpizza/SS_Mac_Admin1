@@ -1,6 +1,6 @@
 const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight", "eleventy-md-syntax-highlight");
 const htmlmin = require("html-minifier");
 
 module.exports = function (eleventyConfig) {
@@ -19,6 +19,11 @@ module.exports = function (eleventyConfig) {
 
   // Syntax Highlighting for Code blocks
   eleventyConfig.addPlugin(syntaxHighlight);
+
+  // Syntax Markdown Highlight Line Numbers
+  eleventyConfig.addPlugin(syntaxHighlight,
+    { showLineNumbers: false });
+
 
   // To Support .yaml Extension in _data
   // You may remove this if you can use JSON
