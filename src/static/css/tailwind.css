@@ -28,9 +28,10 @@ pre {
 }
 
 code .highlight-line:before {
-  position: sticky; /*added*/
-  left: 0; /*added*/
-  background: var(--code-bg); /*added*/
+  position: sticky;
+  left: 0;
+  background: var(--code-bg);
+  -webkit-user-select: none;
 
   user-select: none;
   border-right: 1px solid hsla(0, 0%, 0%, 0.2);
