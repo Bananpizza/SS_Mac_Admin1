@@ -20,3 +20,26 @@ body pre[class*="language-"] {
   content: counter(lineNumber);
   counter-increment: lineNumber;
 }
+
+/* More Syntax Highlight */
+
+pre {
+  counter-reset: lineNumber;
+}
+
+code .highlight-line:before {
+  position: sticky; /*added*/
+  left: 0; /*added*/
+  background: var(--code-bg); /*added*/
+
+  user-select: none;
+  border-right: 1px solid hsla(0, 0%, 0%, 0.2);
+  color: hsla(0, 100%, 100%, 0.6);
+  content: counter(lineNumber);
+  counter-increment: lineNumber;
+  display: inline-block;
+  font-variant-numeric: tabular-nums;
+  margin-right: 1.2rem;
+  text-align: center;
+  width: 3em;
+}
