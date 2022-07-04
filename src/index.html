@@ -23,7 +23,7 @@ path: home
   <section class="mt-15">
   {% set postslist = collections.post %}
 
-  {% for post in postslist limit:4 %}
+  {% for post in postslist | slice(4) | reverse %}
   <article class="my-8">
       <h2 class="font-bold text-3xl mb-2">
           <a href="{{ post.url | url }}">
@@ -34,6 +34,11 @@ path: home
               {% endif %}
           </a>
       </h2>
+      {% if post.data.description %}
+        <p class="text-lg mb-3">
+            {{ post.data.description }}
+        </p>
+    {% endif %}
   </article>
   {% endfor %}
   </section>
