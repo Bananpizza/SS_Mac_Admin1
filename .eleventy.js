@@ -1,6 +1,7 @@
 const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight", "eleventy-md-syntax-highlight");
+// const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const syntaxHighlight = require("eleventy-md-syntax-highlight")
 const htmlmin = require("html-minifier");
 
 module.exports = function (eleventyConfig) {
