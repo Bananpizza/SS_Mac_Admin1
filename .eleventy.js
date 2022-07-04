@@ -18,7 +18,7 @@ module.exports = function (eleventyConfig) {
   });
 
   // Syntax Highlighting for Code blocks
-  eleventyConfig.addPlugin(syntaxHighlight);
+  // eleventyConfig.addPlugin(syntaxHighlight);
 
   // Syntax Markdown Highlight Line Numbers
   eleventyConfig.addPlugin(syntaxHighlight,
