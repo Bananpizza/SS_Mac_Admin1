@@ -22,8 +22,9 @@ module.exports = function (eleventyConfig) {
   // eleventyConfig.addPlugin(syntaxHighlight);
 
   // Syntax Markdown Highlight Line Numbers
-  eleventyConfig.addPlugin(syntaxHighlight,
-    { showLineNumbers: true });
+  eleventyConfig.addPlugin(syntaxHighlight, { 
+    showLineNumbers: true,
+  });
 
   // To Support .yaml Extension in _data
   // You may remove this if you can use JSON
