@@ -23,7 +23,7 @@ path: home
   <section class="mt-15">
   {% set postslist = collections.post %}
 
-  {% for post in postslist limit: 5 | reverse %}
+  {% for post in postslist limit:5 | reverse %}
   <article class="my-8">
       <h2 class="font-bold text-3xl mb-2">
           <a href="{{ post.url | url }}">
