@@ -289,5 +289,7 @@ So all in all, our full mobileconfig will look like the following XML:
 
 ```
 
-Have fun and good luck!
+<br/>
+
+<b>Have fun and good luck!</b>
 
