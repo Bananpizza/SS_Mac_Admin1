@@ -29,3 +29,6 @@ The list is the following:
 > - Mac Mini 2018 and later<br/>
 > - Mac Pro 2019 and later<br/>
 
+<br/>
+
+## Platform Single Sign-On
