@@ -17,7 +17,7 @@ Let's have a look and see what delicious features they are providing, some might
 
 Sometimes when a new OS drops, some hardware adoptions might be needed due to security features it provides. Ventura will drop support for a quite hefty portion of hardware compared to other versions.
 
-You will need a device no older than 2017. For MacBook Air and Mini, push it to 2018. Mac Pro users, you need the cheesegrater. Time to throw my own trashbin in the... trashbin.
+You will need a device no older than 2017. For MacBook Air and Mini, push it to 2018. Mac Pro users, you need the cheesegrater. Time to throw my own trascan in the... trashcan.
 
 The list is the following: 
 >
@@ -37,7 +37,7 @@ With this update, Apple will release Platform Single Sign-On. This allows the us
 
 The best part is, we can create config profiles for this! I really hope Microsoft will dish this one out quite fast for their Company Portal! They have given a timeline of this fall.
 
-|![Platform Single Sign-On](Plat_SSO.png)|
+|![Platform Single Sign-On](/src/static/img/Plat_SSO.png)|
 |:--:|
 |Apple Platform Single Sign-on
 
