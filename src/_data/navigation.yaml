@@ -7,4 +7,4 @@ items:
   - text: Contact
     url: "#"
   - text: Database
-    url: "#"
+    url: "/database"
