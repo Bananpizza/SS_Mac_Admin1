@@ -38,8 +38,7 @@ With this update, Apple will release Platform Single Sign-On. This allows the us
 
 The best part is, we can create config profiles for this! I really hope Microsoft will dish this one out quite fast for their Company Portal! They have given a timeline of this fall.
 
-|![Platform Single Sign-On](/src/static/img/Plat_SSO.png)|
-|<img src="/src/static/img/Plat_SSO.png">|
+|![Platform Single Sign-On](/static/img/Plat_SSO.png)|
 |:--:|
 |Apple Platform Single Sign-on|
 
