@@ -5,6 +5,7 @@ author: SS Mac Admin
 date: 2022-07-23
 tags:
   - macOS
+  - Ventura
 ---
 
 Apple's WWDC 2022 gave us quite some tings to have in mind going through the year. Both with macOS 13 (Ventura) and iOS and iPadOS 16. <br/>

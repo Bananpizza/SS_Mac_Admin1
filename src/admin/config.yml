@@ -16,6 +16,7 @@ collections:
     name: "blog"
     folder: "src/posts"
     create: true
+    media_folder: "static/img"
     editor:
       preview: false
     fields:
