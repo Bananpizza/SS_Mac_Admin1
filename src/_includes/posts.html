@@ -3,7 +3,7 @@ layout: default
 prism: true
 ---
 
-<div class="container max-w-5xl mt-6  px-6">
+<div class="container max-w-7xl mt-6  px-6">
     <div class="pb-5 mb-5 border-b border-gray-100">
         <h1 class="font-bold text-5xl">{{title}}</h1>
         <p class="text-center text-base leading-6 font-medium">
@@ -15,7 +15,11 @@ prism: true
         </p>
 
     </div>
-    <article class="prose lg:prose-xl my-4 mx-auto">
-        {{ content | safe }}</article>
+    <article class="prose prose-xl my-4 mx-auto max-w-screen-xl">
+        <span class="leading-snug">
+        {{ content | safe }}
+    
+        {% initClipboardJS %}</span></article>
 
+        
 </div>

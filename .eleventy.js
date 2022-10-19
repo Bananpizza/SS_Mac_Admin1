@@ -1,6 +1,8 @@
 const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const codeClipboard = require("eleventy-plugin-code-clipboard");
+const markdownIt = require('markdown-it');
 const htmlmin = require("html-minifier");
 
 module.exports = function (eleventyConfig) {
@@ -21,6 +23,14 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight, {
     alwaysWrapLineHighlights: true,
   });
+
+  // Syntax Highlight Code Clipboard
+  eleventyConfig.addPlugin(codeClipboard, {
+    clipboardJSVersion: '2.0.8',
+    buttonClass: 'code-copy',
+  });
+    
+  // Markdown-IT
 
   // To Support .yaml Extension in _data
   // You may remove this if you can use JSON
