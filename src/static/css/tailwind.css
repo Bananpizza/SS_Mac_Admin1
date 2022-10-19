@@ -22,7 +22,7 @@ body pre[class*="language-"] {
   content: counter(lineNumber);
   counter-increment: lineNumber;
 }
-*/
+*/ 
 
 /* More Syntax Highlight */
 
