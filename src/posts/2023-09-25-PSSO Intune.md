@@ -43,23 +43,22 @@ When deployed, the profile should look like the screenshot:
 ![](/static/img/psso_profile_on_device.png)
 
 ## The experience
-From the device and user perspective, it's quite smooth.
-When the Company Portal is set up and the user log in, a toast notification will tell the user to use your IDP password to login to the Mac.
+From the perspective of both the device and the user, the experience is remarkably seamless. After setting up the Company Portal and logging in, a toast notification will prompt the user to utilize their IdP password for logging into the Mac.
 ![](/static/img/psso_toast_register.png)
 
-When clicking on Register, you will be redirected to register the device with Microsoft Entra.
+Clicking on "Register" will redirect you to the device registration process with Microsoft Entra.
 ![](/static/img/psso_toast_register_entra.png)
 
-When finalized, the last prompt is displayed and this asks for your current local device password. When entered and finished, the Platform SSO payload is completed and the user can now use their IdP credentials to login to the device from the log in screen.
+Upon completion, the final prompt will request your current local device password. Once entered and confirmed, the Platform SSO payload is fully implemented. From this point forward, the user can use their IdP credentials to log in to the device directly from the login screen.
 ![](/static/img/psso_toast_register_complete.png)
 
-To verify that the device is registered and the tokens has been recieved, type **app-sso platorm -s** in the terminal and you can see all the configurations.
+To verify the successful registration of the device and the reception of tokens, simply type **app-sso platform -s** in the terminal to view all configurations.
 ![](/static/img/psso_terminal.png)
 
 ## Thoughts
 This is a great step for the IdP sync for Intune and macOS devices. No more hassle with the SSO Extension and kerberos sync with On-Prem and use of VPN to enable the sync in the first place.
 
-I'm looking forward to more enhancements to the PSSO development within Intune and some kind of integration with the onboarding experience during an ADE enrollment.
+I'm really looking forward to seeing how PSSO evolves within Intune, and I've got my fingers crossed for seamless integration with the onboarding experience during an ADE enrollment.
 
-And from the looks of it, a lot of great features in development when looking through the Settings Catalog for Platform SSO.
+And just peeking into the Settings Catalog for Platform SSO, it's pretty clear that there are some seriously cool features in the works.
 ![](/static/img/psso_new_settings.png)
