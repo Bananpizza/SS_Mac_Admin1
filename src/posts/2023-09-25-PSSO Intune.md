@@ -32,7 +32,7 @@ Platform SSO offers two supported authentication methods:
 
 ## Configuration
 First, we need to create a SSO Payload and we will be using the Settings Catalog for this.
-![](static/img/psso_profile_create.png)
+![](/static/img/psso_profile_create.png)
 
 Then we click on '+ Add Settings' and search for 'Extensible Single Sign On', and select the options as shown in the screenshot, and configure accordingly.
 ![](/static/img/psso_profile_settings.png)
