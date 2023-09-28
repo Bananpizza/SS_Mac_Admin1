@@ -7,7 +7,7 @@ tags:
   - blog
 ---
 
-## Intune and PSSO
+## Intune and Platform Single Sign-On
 
 Microsoft is taking a significant step forward by introducing Platform Single Sign-On (SSO) functionality to macOS devices in Intune.
 
