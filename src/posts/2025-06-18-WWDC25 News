@@ -1,0 +1,107 @@
+---
+title: WWDC25 MDM News
+description: It's spciy!
+author: SS Mac Admin
+date: 2025-06-18
+tags:
+  - blog
+---
+
+# 📱 All the New MDM Features from Apple’s WWDC25
+
+Apple's WWDC25 unveiled a massive slate of upgrades to Mobile Device Management (MDM), showcasing a vision centered around declarative management, automation, and streamlined identity. Here's a full breakdown of everything new for IT administrators, MDM developers, and enterprise Apple environments.
+
+---
+
+## 🔧 1. Apple Business & School Manager Gets Smarter
+
+- **Managed Apple Accounts**: A new downloadable report lists personal Apple IDs linked to your domain, helping you steer users toward official managed accounts.
+- **Block Personal Apple IDs**: IT can now block personal IDs during Setup Assistant—even without MDM configuration.
+- **ABM/ASM APIs**: New APIs allow you to:
+  - Retrieve device inventories
+  - Reassign devices to different MDM servers
+  - Check enrollment statuses
+- **Vision Pro Enrollment Support**: Use Apple Configurator to enroll Vision Pro. Pairing via iPhone is now available.
+- **Server Migration Tool**: Migrate devices between MDM servers without wiping them. Set migration deadlines with fallback auto-migration if users don’t act.
+
+> 🗣 “Omg the MDM migration thing will make my life so much easier this summer.” — Reddit
+
+---
+
+## 🛠 2. Declarative Device Management (DDM)
+
+- **Expanded Support**: DDM now supports:
+  - Software updates for iOS, iPadOS, macOS, tvOS, visionOS
+  - Vision Pro
+- **New Update Controls**: Define update cadence, defer periods, and enforce deadlines—all handled on-device. Traditional commands are deprecated.
+
+---
+
+## 🌐 3. Safari & Network Management
+
+- **Safari Configuration via DDM**:
+  - Push bookmarks
+  - Set default homepages
+- **Managed Network Relays**: Now support FQDN-based traffic routing for more control over network traffic in enterprise setups.
+
+---
+
+## 🔁 4. Return to Service (Shared Devices)
+
+- **Preserve Managed Apps**: Erase iPads, iPhones, or Vision Pro for reuse without wiping managed apps.
+- **Vision Pro Support**: Control Center includes “Reset for Next User” to streamline shared use cases.
+
+---
+
+## 📦 5. Smarter App Management
+
+- **Per‑App Deployment Controls**:
+  - Pin versions
+  - Block cellular downloads
+  - Monitor install/update status
+- **macOS App Distribution**:
+  - Deploy apps/packages declaratively on macOS Tahoe
+  - Create self-service catalogs with the new `ManagedAppDistribution` framework
+
+---
+
+## 🛂 6. Identity & Access Enhancements
+
+- **Setup Assistant SSO**:
+  - During ADE on macOS Tahoe, you can configure Platform SSO and link to Managed Apple ID **before** login.
+- **Tap‑to‑Login / Authenticated Guest Mode**:
+  - Use iPhone, Apple Watch, or NFC badge to unlock shared Macs.
+  - All data is wiped after logout—ideal for labs and shift-based workers.
+
+> 🗣 “Setup Assistant and SSO now work seamlessly.” — Reddit
+
+---
+
+## 💡 Why It Matters
+
+| Benefit | How It Helps |
+|--------|---------------|
+| **Scalability** | Declarative model means less MDM traffic and higher reliability |
+| **Efficiency** | Faster deployment, shared device prep, and app control |
+| **Security** | Tighter control over identity, accounts, and update timelines |
+| **User Experience** | More seamless onboarding, shared use, and app management |
+
+---
+
+## 🧠 TL;DR: Apple MDM in 2025
+
+- ✅ Vision Pro fully supported
+- ✅ Seamless device-to-server migration
+- ✅ Declarative control over Safari, apps, and updates
+- ✅ Identity-first onboarding and access
+- ✅ Shared device workflows—reimagined
+
+---
+
+Want to go deeper? I can help with:
+
+- 🔐 Setting up Platform SSO or Tap‑to‑Login  
+- 📦 Deploying apps with DDM on macOS  
+- 🔄 Migrating devices to a new MDM without re-enrolling  
+
+Just let me know!
