@@ -39,7 +39,7 @@ Cleaner interfaces mean happier users. Employees benefit from faster, more reada
 Ok, so enough yapping, let's get to work.
 
 
-##Deploy Adblock with Intune
+## Deploy Adblock with Intune
 
 So I will be deploying uBlock Origin since I think it's the best one out the personally and that I've got experience with.
 
