@@ -40,6 +40,7 @@ Ok, so enough yapping, let's get to work.
 
 
 ##Deploy Adblock with Intune
+
 So I will be deploying uBlock Origin since I think it's the best one out the personally and that I've got experience with.
 
 First I block all extensions and whitelist whenever it's necessary. This way you also get control over extensions that could possibly do harmful things or leak data.
