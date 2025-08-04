@@ -7,7 +7,7 @@ tags:
   - blog
 ---
 
-##Configure
+## Configure
 
 With uBlock deployed to the orgainzation from the last post. We can also dive deeper in configuring uBlock with the help of some PowerShell and we will utilize remediation scripts in Intune to have a way check in with devices from time to time if changes has been made or if we want to update some configurations.
 
@@ -15,7 +15,7 @@ Got the chance to do this because a customer wanted to whitelist a couple of web
 These detect and remediate scripts also allow you to change filterlists. If you know your way around Powershell, it shouldn't be hard to add even more configurations that's available on uBlock's Wiki-page.
 
 
-###Detect
+### Detect
 
 Let us configure the Detection part first.
 
@@ -86,7 +86,7 @@ try {
 }
 ```
 
-###Remediate
+### Remediate
 
 The remediate part kicks in if we find anomalies from what we want our baseline to be in uBlock. The settings, as mentioned in the detection part, should be identical otherwise it will just loop itself to infinity and beyond.
 
