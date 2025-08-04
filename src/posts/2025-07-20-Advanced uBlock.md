@@ -22,7 +22,7 @@ First we need to set the location to the rigstry key that contain all informatio
 
 We will mainly touch the part of the script that includes "trustedSiteDirectives". This is where the whitelisting of websites that's not going to be touched by uBlock will be put. This part need to be identical in both the Detect and Remediate part, since we want to find out if something has been changed from our baseline. This setting do not interfere with the manual whitelists users might have done on their own with the extension.
 
-```ps
+```powershell
 # Detect
 [int32]$SkipRemediate = 0
 [int32]$Remediate = 1
@@ -90,7 +90,7 @@ try {
 The remediate part kicks in if we find anomalies from what we want our baseline to be in uBlock. The settings, as mentioned in the detection part, should be identical otherwise it will just loop itself to infinity and beyond.
 
 
-```ps
+```powershell
 # Remediate
 [int32]$Success = 0
 [int32]$Failure = 1
