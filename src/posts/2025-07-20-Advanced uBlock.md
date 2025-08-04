@@ -16,6 +16,7 @@ These detect and remediate scripts also allow you to change filterlists. If you 
 
 
 ###Detect
+
 Let us configure the Detection part first.
 
 First we need to set the location to the rigstry key that contain all information about the extension. Then we run a detection how we want the settings to be as our baseline. If it doesn't match, the remediation will kick in and set the parameters we would like. 
